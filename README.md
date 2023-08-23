@@ -2,7 +2,7 @@
 
 This program uses a trained Transformer model[arXiv:1706.03762] to generate atomic coordinates, types, and charges for protein interaction surfaces on any given protein surface region. The training data for this model is extracted from the PDB database. Based on this data, the program can use the Point Drift algorithm alignment [DOI:10.1109/TPAMI.2010.46] method to search for peptides in the database (which should have a stable secondary structure and calculated atomic charges, and can be stable peptides or cyclic peptides) to obtain backbone proteins. Finally, software like Rosetta is used for side-chain optimization of the interaction site to obtain interacting peptides at specified protein residues.
 
-The training dataset can be constructed by the user or can be obtained from a pre-built database.
+The training dataset can be constructed by the user or can be obtained from a pre-built database (https://u.pcloud.link/publink/show?code=XZFQeaVZlRnVZny3nygSc7h4j5llMY1NW6SUFoVXy).
 
 1_transformer_redo_ignh_dis350_cbem.py: Program for training the model.
 
