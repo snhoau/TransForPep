@@ -19,7 +19,7 @@ supplymentary/transpep_model_dis350_cbem_final.pt: Trained model file.
 # Usage
 
 # 1. Training
-If you are planning to use my pre-trained model, you can skip this step. However, you can also modify the model parameters and train a new model using the protein-protein interaction interface data. We provide a dataset for calculating charges using a force field on the interaction interface. See above for the download method.
+If you are planning to use my pre-trained model, you can skip this step. However, you can also modify the model parameters and train a new model using the real-world protein-protein interaction interface data (from PDB). We provide a dataset for calculating charges using a force field on the interaction interface. See above for the download method.
 
 Operating Environment
 We provide the training environment for reference. It should not give any errors. Adjust the batch size according to the available GPU memory. Install the missing components using pip. CUDA and PyTorch versions mentioned below are required.
