@@ -1,4 +1,4 @@
-![image](https://github.com/snhoau/TransForPep/assets/31702244/f3c32085-f2db-427a-97c8-afa8209c8bff)# TransForPep
+# TransForPep
 
 This program uses a trained Transformer model[arXiv:1706.03762] to generate atomic coordinates, types, and charges for protein interaction surfaces on any given protein surface region. The training data for this model is extracted from the PDB database. Based on this data, the program can use the Point Drift algorithm alignment [DOI:10.1109/TPAMI.2010.46] method to search for peptides in the database (which should have a stable secondary structure and calculated atomic charges, and can be stable peptides or cyclic peptides) to obtain backbone proteins. Finally, software like Rosetta is used for side-chain optimization of the interaction site to obtain interacting peptides at specified protein residues.
 
@@ -57,7 +57,7 @@ lines to be modified
 - line 411: path to save the ideal interaction interface as an XYZ file
 
 Note: 1. Delete the atomic information in the XYZ file that exceeds the predicted region of the model (where the coordinate points are mostly zero). Also, make sure to modify the number of atoms at the top. You can use software (such as DS View) to view the file.
-2. The model will generate only z-axis positive peptides. 
+2. The model will generate only `z-axis positive peptides`. 
 
 # 3. Database Search
 We use the publicly available scorffed database from David Baker's lab, which contains short peptides, along with our own custom peptide database. Due to originality concerns, we cannot provide the download link for the full database (we only provide a small amount of data as an example, link: https://u.pcloud.link/publink/show?code=XZIKoaVZFsXBdLSXO2Vkw5sR1BNhEFxNlmt7). Please download the complete database from David Baker's lab website and cite it appropriately. You can also use your own custom peptide database (we recommend using structurally stable peptides for building the database). After calculating the charges for each PDB file in the database (using Amber), save the data in the format specified in the input file (gsdmdinput.pkl) or the database file (pickle). If you have any questions, feel free to contact us.
