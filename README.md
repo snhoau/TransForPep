@@ -77,4 +77,20 @@ lines to be modified
 
 This program only provides the basic framework for interacting peptides. For better results, we recommend using interaction optimization software such as Rosetta to further optimize the amino acids based on the interaction conformation.
 
+# Citing this work
+If you use the code or database, please cite:
 
+https://www.nature.com/articles/s41590-025-02280-x
+
+```bibtex
+@article{sun2025delaying,
+  title={Delaying pyroptosis with an AI-screened gasdermin D pore blocker mitigates inflammatory response},
+  author={Jianhui, Sun and Jun, Yang and Jie, Tao and Yifan, Yang and Rui, Wang and Huacai, Zhang and Wenyi, Liu and Shulin, Zhao and Runze, Shao and Yuhui, He and Shaolin, Tao and Yaxiong, Li and Hai, Qu and Di, Liu and Jingwen, Li and Jianxin, Jiang and Bo, Deng and Chu, Gao and Ping, Lin and Ling, Zeng and Ping, Meng and Gan, Wang},
+  journal={Nature Immunology},
+  volume={-},
+  number={-},  
+  pages={0--0},
+  year={2025},
+  publisher={Springer Nature}
+}
+```
