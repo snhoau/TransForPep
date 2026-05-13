@@ -1,0 +1,7 @@
+This section provides some necessary process files generated during the screening of Nav1.8 inhibitors. The specific processing steps are as follows:
+1. Split the target region by amino acid units and save each one separately as a PDB file.
+2. Use the 1_move2_parallel_xy.py script in the input folder to center the atoms and place the structure along the z-axis at the maximum area.
+3. Use `tleap -f *.in` to generate the `prmtop` and `inpcrd` files, then use `acpype -p com.solv.prmtop -x com.solv.inpcrd` to generate the `top` and `gro` files (not tested, but it may work: use GROMACS `pdb2gmx` to generate `top` and `gro` files from the PDB file).
+4. Use `2_grotop2pkl_input.py` in the input folder to generate the input file (pkl).
+5. Use `8_ICPdatabase_sc_cbem.py` for scoring; note that the input and output files need to be modified.
+6. Use `9_score_sort.py` to sort the scoring results.
