@@ -5,3 +5,5 @@ This section provides some necessary process files generated during the screenin
 4. Use `2_grotop2pkl_input.py` in the input folder to generate the input file (pkl).
 5. Use `8_ICPdatabase_sc_cbem.py` for scoring; note that the input and output files need to be modified.
 6. Use `9_score_sort.py` to sort the scoring results.
+
+In addition, due to file size limitations, we have uploaded our in-house database of 5-amino-acid cyclic peptides with calculated charges and subjected to molecular dynamics optimization to Zenodo.
